@@ -39,7 +39,7 @@ namespace Blog.Controllers
             {
                 autorizeCookies = "vrai";
             }
-
+            
             Response.Cookies.Set(new HttpCookie("autoriser_analyse", autorizeCookies) { Expires = DateTime.MaxValue });
 
             return View("Index");
